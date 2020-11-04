@@ -2,7 +2,7 @@ write a queries for the following question
 
 delete the record of the Agent_name priya 
 change the name with your_name and place with your_place of the agent code A002
-an agent name sankalp shifted who shifted his working_area to delhi. change the record of the sanklap according to the situation
+an agent name sankalp who shifted his working_area to delhi. change the record of the sanklap according to the situation
 suppose you get job in that company , then insert your information in that given agent table with Agent_code A014
 suppose you get task to check the constraints of the agent table , perform your task with suitable queries
 drop the primary key constraint of the agent table
