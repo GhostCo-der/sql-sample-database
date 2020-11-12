@@ -1,0 +1,56 @@
+Alter Commands
+
+
+
+
+-> TO CHANGE THE TABLE NAME 
+#         alter table <old-table-name>
+                  rename to <new-table -name>
+                  
+ 
+ 
+ ->TO CHANGE THE COLUMN NAME 
+ 
+ #      alter table <table-name>
+             rename <old-column-name> to <new-column-name>
+             
+             
+ ->TO ADD A NEW COLUMN
+ 
+ #     alter table <table-name>
+       add <column_name>  <data-type> <constraint>;
+       
+       
+       
+ ->  to Drop a column 
+ 
+ # alter table <table-name>
+   drop <column-name>
+   
+   
+   
+   ->TO CHANGE THE DATA TYPE OF THE COLUMN
+                
+       #         alter table <table-name>
+                        alter column <column-name> type <new-data-ype>
+                        
+    -> To ADD A NOT-NULL CONSTRAINT
+    
+    #         alter table <table-name>
+                alter column <column-name> set not null;
+                
+                
+   ->  TO DROP NOT NULL CONSTRAINT
+   
+   #    alter table <table-name>
+            alter column <column_name> drop not null;
+            
+            
+   -> TO ADD PRIMARY KEY
+  #     alter table <table-name>
+            ADD primary key (<column_nmae>);
+            
+            
+            
+         
+
