@@ -1,0 +1,33 @@
+QUESTION 1 ->What is the importance of primary key in a table? Explain with example?
+QUESTION 2 -> Meena uses a STUDENT table with following columns:
+          NAME ,CLASS,COURSE_ID,COURSE_NAME
+She needs to display names of students who have not been assigned any course or have been assigned “pathology” course. Pathology course’s names end with “Pathology”. She wrote the following query:
+SELECT NAME,CLASS
+FROM STUDENT,COURSE
+WHERE COURSE_NAME = NULL OR COURSE_NAME = “%pathology”;
+But the query is not producing result. Identify the problem.
+
+QUESTION 3->Prerna needs to remove all the rows from SALE_HISTORY table to release the storage space. 
+But she does not want to remove the table structure.
+Which statement should she use?
+
+QUESTION 4-> What is the importance of primary key in a table? Explain with example
+
+QUESTION 5-> 	
+The Title and Price columns of table “Library” are given below:
+TITLE                    PRICE
+Mastering C++             295
+Guide Network             300
+Mastering SQL             450
+Dos GUIDE                 400
+Basic for beginners       299
+Mastering Window         Null
+
+
+
+Based on this information ,find the output of the following queries:
+(a)    SELECT MIN(Price)from library;
+(b)   SELECT COUNT(Title) from library WHERE Price < 150;
+(c)    Select  AVG(price) from library WHERE title like ‘%e%’;
+
+QUESTION 5-> http://anandganeshp.blogspot.com/2013/10/sample-paper-class-xii-mysql.html
