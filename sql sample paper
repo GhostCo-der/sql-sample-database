@@ -30,4 +30,4 @@ Based on this information ,find the output of the following queries:
 (b)   SELECT COUNT(Title) from library WHERE Price < 150;
 (c)    Select  AVG(price) from library WHERE title like ‘%e%’;
 
-QUESTION 5-> http://anandganeshp.blogspot.com/2013/10/sample-paper-class-xii-mysql.html
+QUESTION 5-> 
