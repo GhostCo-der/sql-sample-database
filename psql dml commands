@@ -52,5 +52,22 @@ Alter Commands
             
             
             
-         
+         -> TO CHANGE THE PASSWORD OF THE DEFINED USER 
+     
+    #    alter user postgres with password 'your password';
+
+
+        -> create a new user 
+
+      # create user <user name> with password ' type your password here';
+      
+      
+      
+      -> change privelege of the user as the super user 
+      #  alter user <user name > with superuser;
+      
+      
+      -> to remove define user from the list 
+      
+            # drop user <name of the user you want ti remove >
 
