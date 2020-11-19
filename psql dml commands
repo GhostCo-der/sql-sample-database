@@ -34,6 +34,12 @@ Alter Commands
        #         alter table <table-name>
                         alter column <column-name> type <new-data-ype>
                         
+                        
+                  -> give default value with add column syntax
+                  
+                  # alter table table <table name>
+                  add column column_name datatype  default <give the value here>
+                        
     -> To ADD A NOT-NULL CONSTRAINT
     
     #         alter table <table-name>
