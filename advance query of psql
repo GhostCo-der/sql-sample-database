@@ -1,0 +1,41 @@
+## CONCATATION
+  it is used to join contents of two or more columns
+
+->METHOD 1  :- using pipe operator  '||'
+
+         synatx
+         
+         select (column1 || column2 || column3) as new_name
+          from table_name
+          
+          -> METHOD 2 :- using concat() function
+          
+          syntax
+          
+          select concat(column1,column2,column3)
+          from table_name
+          
+          
+          
+ ## DEFAULT
+ 
+ it is used to give default value to the column
+ 
+ syntax
+ 
+ alter table table_name
+add column new_column datatype  default 'give the default value' 
+
+
+
+
+
+ 
+          
+          
+          
+    
+        
+        
+         
+         
