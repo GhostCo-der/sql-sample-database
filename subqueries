@@ -1,0 +1,130 @@
+SQL> DESC employees
+ Name			 Null?	  Type
+ ----------------------- -------- ----------------
+ EMPLOYEE_ID		 NOT NULL NUMBER(6)
+ FIRST_NAME			  VARCHAR2(20)
+ LAST_NAME		 NOT NULL VARCHAR2(25)
+ EMAIL			 NOT NULL VARCHAR2(25)
+ PHONE_NUMBER			  VARCHAR2(20)
+ HIRE_DATE		 NOT NULL DATE
+ JOB_ID 		 NOT NULL VARCHAR2(10)
+ SALARY 			  NUMBER(8,2)
+ COMMISSION_PCT 		  NUMBER(2,2)
+ MANAGER_ID			  NUMBER(6)
+ DEPARTMENT_ID			  NUMBER(4)
+ 
+ 
+ Examine the table structure as follows and answer the questions 1 to 7 that follow
+ 
+ 
+ 1. SELECT last_name, job_id, salary
+FROM employees
+WHERE salary = (SELECT max(salary)
+FROM employees);
+
+
+
+2. SELECT first_name, last_name, min(salary)
+FROM employees
+GROUP BY department_id 
+HAVING MIN(salary) > 
+		(SELECT min(salary)
+		FROM employees
+		WHERE department_id = 100); 
+    
+3. .You need to find the jobs which have maximum average salary?
+
+4. The following query throws an error. Choose the correct reason for the error as given in the options.
+
+SELECT first_name, last_name
+FROM employees
+WHERE commission_pct  = (SELECT min(commission_pct )
+          FROM employees
+          GROUP BY department_id); 
+          
+          
+  5.Consider the query given below.How many records will be returned as a result of the above query? (Assuming the no employee with job id XX exists in the company)
+
+SELECT first_name, last_name
+FROM employees
+WHERE salary = (SELECT salary
+		FROM employees
+		WHERE job_id = 'XX');
+    
+    
+    .Which of the following is true about sub-queries?
+
+They execute after the main query executes
+They execute in parallel to the main query
+The user can execute the main query and then, if wanted, execute the sub-query
+They execute before the main query executes.
+Answer: D. The sub-query always executes before the execution of the main query.Subqueries are completed first.The result of the subquery is used as input for the outer query.
+
+3.Which of the following is true about the result of a sub-query?
+
+The result of a sub-query is generally ignored when executed.
+The result of a sub-query doesn't give a result, it is just helpful in speeding up the main query execution
+The result of a sub-query is used by the main query.
+The result of a sub-query is always NULL
+Answer: C. Subqueries are completed first.The result of the subquery is used as input for the outer query.
+
+4.Which of the following clause is mandatorily used in a sub-query?
+
+SELECT
+WHERE
+ORDER BY
+GROUP BY
+Answer: A. A sub-query is just like any other query which has to start with a SELECT clause. They are contained within an outer query.
+
+5. Which of the following is a method for writing a sub-query in a main query?
+
+By using JOINS
+By using WHERE clause
+By using the GROUP BY clause
+By writing a SELECT statement embedded in the clause of another SELECT statement
+Answer: D. A subquery is a complete query nested in the SELECT, FROM, HAVING, or WHERE clause of another query.The subquery must be enclosed in parentheses and have a SELECT and a FROM clause, at a minimum.
+
+6.In the given scenarios, which one would appropriately justify the usage of sub-query?
+
+When we need to sum up values
+When we need to convert character values into date or number values
+When we need to select rows from a table with a condition that depends on the data from the same or different table.
+None of the above
+Answer: C.
+
+7.In which of the following clauses can a sub-query be used?
+
+HAVING
+WHERE
+FROM
+All of the above
+Answer: D. A sub-query is not different from a normal query. It can make use of all the primary clauses of a SELECT statement.
+
+8.Which of the following single-row operators can be used for writing a sub-query?
+
+>=
+<
+=
+All of the above
+Answer: D. Single-row operators include =, >, <, >=, <=, and <>.
+
+9.Which of the following multi-row operators can be used with a sub-query?
+
+IN
+ANY
+ALL
+All of the above
+Answer: D. Multiple-row subqueries return more than one row of results.Operators that can be used with multiple-row subqueries include IN, ALL, ANY, and EXISTS.
+
+10.What is true about the output obtained from a sub-query?
+
+It remains in the buffer cache
+It remains inside the sub-query and can be used later when needed
+It is used to complete the outer (main) query
+Both A and C
+Answer: C. Subqueries are completed first.The result of the subquery is used as input for the outer query.
+    
+    
+    
+    
+    
