@@ -1,0 +1,27 @@
+//..................................to create table 
+
+create table college (s_id int , name varchar(30),deptno int)
+
+
+
+s_id,name ,deptno
+1231,roshan,10
+1232,shatyam,9
+1233,virat,2
+1234,amit,5
+1235,priya,10
+1236,rishav,2
+1237,shivam,9
+1238,riya,5
+1239,tarun,10
+1240,smith,2
+
+//......................................to create dept table
+
+create table dept (int deptno.dept_name varchar(20))
+
+deptno,dept_name
+2,EEE
+5,ECE
+10,CSE
+9,ME
